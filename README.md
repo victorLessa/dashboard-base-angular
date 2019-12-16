@@ -100,3 +100,9 @@ Lista:
 3. [Ngx-mask](https://www.npmjs.com/package/ngx-mask/v/1.0.0)
 4. [Sweetalert2](https://sweetalert2.github.io/v7.html)
 5. [Toastr](https://www.npmjs.com/package/ngx-toastr)
+
+## <a name=dependencias><a/> Dependências Desenvolvimento:
+
+Lista:
+
+1. [Node-sass](https://webdesign.tutsplus.com/pt/tutorials/watch-and-compile-sass-in-five-quick-steps--cms-28275)
