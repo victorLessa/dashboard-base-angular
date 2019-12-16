@@ -26,8 +26,6 @@
             "styles": [
               "./node_modules/sweetalert2/dist/sweetalert2.css",
               "./node_modules/ngx-toastr/toastr.css",
-              "src/assets/css/bootstrap.reboot.css",
-              "src/assets/css/bootstrap.grid.css",
               "src/assets/css/style.css"
             ],
             "scripts": [
