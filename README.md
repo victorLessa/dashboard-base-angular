@@ -106,3 +106,4 @@ Lista:
 Lista:
 
 1. [Node-sass](https://webdesign.tutsplus.com/pt/tutorials/watch-and-compile-sass-in-five-quick-steps--cms-28275)
+2. [Husky](https://github.com/typicode/husky)
