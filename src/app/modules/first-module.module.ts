@@ -2,15 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FirstModulesRoutingModule } from './first-route.routing';
 
-import { FirstComponentComponent } from './first-component/first-component.component';
+import { FirstComponent } from './first-component/first-component.component';
 
 @NgModule({
   declarations: [
-    FirstComponentComponent
+    FirstComponent
   ],
   imports: [
     CommonModule,
     FirstModulesRoutingModule
+  ],
+  exports: [
+    FirstComponent
   ]
 })
 export class FirstModulesModule { }
