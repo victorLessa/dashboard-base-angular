@@ -1,0 +1,40 @@
+// Mixins
+@mixin fonte($font: 'Open Sans', $size: 12px, $weight: 400) {
+    font-family: $font; font-weight: $weight; font-size: $size;
+}
+
+@mixin shadow($h-offset:2px, $v-offset:8px, $blur:39px, $spread:-20px, $color:rgba(0,0,0,0.75)) {
+    -webkit-box-shadow: $h-offset $v-offset $blur $spread $color;
+    -moz-box-shadow: $h-offset $v-offset $blur $spread $color;
+    box-shadow: $h-offset $v-offset $blur $spread $color;
+}
+
+@mixin generatedButton($bck: #FFF) {
+    @include fonte($size: 14px, $weight: 700); width: 100%; padding: 10px 15px;
+    border-radius: 5px; cursor: pointer; border: none; 
+    box-shadow: 0 0.5px 2.5px 0 rgba(0, 0, 0, 0.2), 
+        0 1.5px 0.5px -1px rgba(0, 0, 0, 0.12), 
+        0 1px 1px 0 rgba(0, 0, 0, 0.14);
+
+    @if $bck == #FFF {
+        background-color: $bck; color: rgba(0, 0, 0, 0.87);
+        
+        &:hover {
+            background-color: #FAFAFA; color: #111;
+        }
+    } @else {
+        background-color: $bck; color: #FFF;
+
+        &:hover {
+            background-color: rgba($bck, 0.9);
+        }
+    }
+
+    &:focus {
+        outline: none; 
+    }
+}
+
+@mixin padding($padding) {
+    padding: $padding calc(100% / 8);
+} 

@@ -1,0 +1,36 @@
+// Buttons Styles
+button {
+    @include generatedButton(); 
+
+    &.btn-primary {
+        @include generatedButton($primary-color);
+    }
+
+    &.btn-outline {
+        border: 2px solid $primary-color; color: $primary-color; background: #FFF;
+        box-shadow: none;
+
+        &.btn-disabled {
+            background-color: #fff; border: 2px solid #929292;
+        }
+    }    
+    
+    &.btn-sm {
+        @include padding(6px)
+    }
+
+    &.btn-md {
+        @include padding(13px); 
+        @include fonte($size: 14px, $weight: 700);
+    }
+
+    &.btn-lg {
+        @include padding(22.5px); 
+        @include fonte($size: 18px, $weight: 700);
+    }
+
+    &.btn-disabled {
+        border: none; background-color: #EBEBEB; color:#929292; cursor: not-allowed;
+        box-shadow: none;
+    }
+}
